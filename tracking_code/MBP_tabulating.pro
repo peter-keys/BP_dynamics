@@ -16,18 +16,17 @@
 ;		SIGI - THE SIGMA VALUE OF IMAGE NORM
 ; OUTPUT:	OBJS- RETURNS THE NEW OBJECTS THAT APPEAR IN THE IMAGE TO BE TRACKED
 ; CALLING	CALLED FROM MBP_tracking.pro [line 132]
-; AUTHOR:     	Version 2.3 - Philip. J. Crockett, QUB, 07 DEC 2010
-;   	    	    	         (Email: pcrockett02@qub.ac.uk)
+; AUTHOR:     	Version 2.3 
 ;
 ;AMENDMENT HISTORY
-;21/01/2011 - (v2.1)-Higher initial intensity threshold employed to set a seed region.  Now potential seed regions must
+; (v2.1)-	Higher initial intensity threshold employed to set a seed region.  Now potential seed regions must
 ;		     overlap original object by 1/2 the number of pixels prior to being separated.  This stops the inclusion
 ;		     of single pixel seeds.
-;21/01/2011 - (v2.1)-Adjustable growing threshold to ensure every chance is given to grow a missed MBP.
-;21/01/2011 - (v2.1)-Grown array is now set to zero during varying stage to prevent erronous inclusion of small MBPs
-;24/01/2011 - (v2.2)-Addition of MBP_seed program which handles multiple seed regions if object is observed to separate.
-;17/02/2011 - (v2.3)-The mergin of two objects found with an associated object is now recognised
-;17/02/2011 - (v2.3)-THe merging of objects is now noted with the addition of a 7th column to table.
+; (v2.1)-	Adjustable growing threshold to ensure every chance is given to grow a missed MBP.
+; (v2.1)-	Grown array is now set to zero during varying stage to prevent erronous inclusion of small MBPs
+; (v2.2)-	Addition of MBP_seed program which handles multiple seed regions if object is observed to separate.
+; (v2.3)-	The mergin of two objects found with an associated object is now recognised
+; (v2.3)-	THe merging of objects is now noted with the addition of a 7th column to table.
 
 
 FUNCTION MBP_tabulating, file, norm, objs, array, next,edg, imgs, imnum, imend,sigi,im_size
