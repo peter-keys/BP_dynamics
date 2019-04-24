@@ -664,7 +664,7 @@ ENDFOR
 ; Made some modifications off the other code to try and get it to out put the images to the terminal
 ; This will make it easier to actually analyse over the PS file version
 
-.r /home/phk/idl/wavelet/nabil_code/emd_test.pro
+.r /home/phk/idl/emd_function.pro
 
 signal = marporeareas
 sda = 0.2
@@ -942,7 +942,7 @@ plot,power_2d_10mHz[x1:x2,y1,0]
 ;MAYBE PRODUCE A VIDEO OF THE PLOTS TO SEE WHICH ANGLE IS THE BEST FOR EACH
 
 ;==================================================================================================
-;SAVE THESE FUCKERS OUT
+;SAVE THESE OUT
 ;SAVE,FILENAME='/data/rosa3/oldrosa1/phk/data/wavelet_datasets/Apr2014/fourier_filtered_parameters_gband_aprdata_new.sav',filtered_data3mhz,filtered_data5mhz,filtered_data10mhz,filtered_power3mhz,filtered_power5mhz,filtered_power10mhz,$
 ;							filt_slice3mHz,filt_slice5mHz,filt_slice10mHz,filt_pslice3mHz,filt_pslice5mHz,filt_pslice10mHz,power_2d_3mhz,$
 ;							power_2d_5mhz,power_2d_10mhz
