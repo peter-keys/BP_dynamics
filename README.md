@@ -39,3 +39,9 @@ This detects and tracks MBP locations in an intensity image array. This is then 
 for waves in MBPs. 
 
 Wave_code:
+This is various useful wave codes by myself (and a few by some others) which is implemented in the wave studies. 
+The codes have a variation on the wavelet procedure in IDL, a way to establish the spatial power from wavelets 
+and the empirical mode decomposition technique which is often used in tandem with wavelets. Also, described 
+here are methods for finding sausge modes in pores, and how to estanblish theoretically whether you have a 
+surface or body mode. Also, there is a code that makes an estimate on energy values for known oscillations 
+based on a theoretical description.
