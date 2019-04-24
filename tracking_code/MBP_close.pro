@@ -9,8 +9,8 @@
 ;               Y - THE Y-COORDINAT TO BE CLOSEST TO.  
 ; OUTPUT:      	RES - THE CLOSEST OBJECT
 ; CALLING:	CALLED WITHIN MBP_tracking.pro & MBP_tabulation.pro
-; AUTHOR:       Version 2.0 - Philip. J. Crockett, QUB, 9th DEC 2010
-;                          (Email: pcrockett02@qub.ac.uk)
+; AUTHOR:       Version 2.0 
+;
 
 FUNCTION MBP_close, img, x, y
 
