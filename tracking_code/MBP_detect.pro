@@ -12,9 +12,6 @@
 ;		(.SAV FORMAT) result = MBP_detect(data='/home/xx/data/cube.sav',start_im=0,end_im=1000)
 ;		NB: If keyword FILE is set output shall be in .FITS format to designated directory
 ;		NB: In .SAV format code shall automatically operate across entire datacube.
-; AUTHOR:  	Version 2.0 - Philip. J. Crockett, QUB, 14 OCTOBER 2010
-;   	    	         (Email: pcrockett02@qub.ac.uk)
-;		Adapted by P. H. Keys, QUB, 2011 - present...
 
 FUNCTION MBP_detect, data=data, start_im=start_im, end_im=end_im,imdim=imdim
 ;----------------------------------------------------------------------------------------------------------------------------
