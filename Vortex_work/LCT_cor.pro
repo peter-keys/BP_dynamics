@@ -12,7 +12,7 @@
 ;		Velocity of features
 ;		Plots with arrows showing shifts
 ;
-;AUTHOR:	Sergiy Shelyag, October 2010, with altercations by Peter H. Keys, December 2010
+;AUTHOR:	
 ;
 ;-
 
