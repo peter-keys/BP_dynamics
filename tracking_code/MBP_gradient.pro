@@ -7,8 +7,8 @@
 ; INPUT:	ARR - ARRAY TO CALCULATE FIRST DERIVATIVE FROM                  
 ; OUTPUT:       FIRDER - THE FIRST DERIVATIVE OF THE ARRAY
 ; CALLING:	CALLED IN MBP_detect, MBP_tracking & MBP_tabulation
-; AUTHOR:       Version 2.0 - Philp. J Crockett, QUB, 09 DEC 2010
-;                          (Email: pcrockett02@qub.ac.uk) 
+; AUTHOR:       Version 2.0 
+;
 
 FUNCTION MBP_gradient,arr
 sz = size(arr)
