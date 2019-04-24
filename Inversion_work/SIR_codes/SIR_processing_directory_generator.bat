@@ -1,5 +1,5 @@
 ;NAME: 
-;	ROSA_directory_generator.bat
+;	SIR_processing_directory_generator.bat
 ;  
 ; CATEGORY:
 ;   File I/O
