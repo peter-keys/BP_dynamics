@@ -35,7 +35,7 @@
 ;
 ;NOTES:			
 ;
-;AUTHOR:	Peter H. Keys, November 2017
+;AUTHOR:	Peter H. Keys
 ;
 ;-
 
