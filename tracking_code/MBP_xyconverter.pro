@@ -11,7 +11,7 @@
 ; 
 ; Example:
 
-; AUTHOR:     D. B. Jess
+; AUTHOR:    
 ;
 ;-
 
