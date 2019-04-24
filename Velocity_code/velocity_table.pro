@@ -10,7 +10,7 @@
 ;
 ;OUTPUT:	The absolute velocity for each detected BP throughout their entire observed existence
 ;
-;AUTHOR:	Peter H. Keys, January 2011
+;AUTHOR:	Peter H. Keys
 ;
 ;-
 
