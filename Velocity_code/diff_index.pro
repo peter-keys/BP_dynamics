@@ -11,7 +11,7 @@
 ;	+ Gamma gives the diffusive properties
 ;	+ The values of the plot are the final outputs (with the file for each MBPs sd)
 ;
-;	P.Keys Jan 2014 (p.keys@qub.ac.uk)
+;	P.Keys 
 ;
 ;	USE:
 ;	.r /home/phk/idl/BP_dynamics/diff_index.pro
