@@ -5,13 +5,13 @@
 ;   File I/O
 ;  	
 ;PURPOSE:
-;	Creates the standard directory structures that we use with the ROSA pipeline
+;	Creates a standard set of directories for SIR inversions
 ;	This is run from IDL command line to make things easier for the user
 ;	Assumes you are creating the directories in a UNIX/LINUX type system 
 ;	May not work, therefore, if you are trying to run it on a laptop
 ;	You can just manually create the necessary directory structures 
 ;
-;  ** NOTE: YOU NEED TO EDIT SOME OF THIS FILE TO GET THE RIGHT DIRECTORIES/FILTERS **
+;  ** NOTE: YOU NEED TO EDIT SOME OF THIS FILE TO GET THE RIGHT DIRECTORIES **
 ;	
 ;
 ;REQUIREMENTS:
