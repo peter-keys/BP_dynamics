@@ -6,7 +6,7 @@ PRO datacube_filter_spatial, datacube, cadence, arcsecpx, period_filters, spatia
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; CHECK FOR DEPENDENCIES FIRST:
-;       @/home/dbj/IDL/DBJ/datacube_filter_spatial_load_dependencies.bat
+;       
 ;
 ; datacube = INPUT DATACUBE, NORMALLY IN THE FORM OF [x, y, t] - BUT SHOULD BE A FILENAME IN THE CASE OF USING THE KEYWORD super_save_memory (BUT SAVE FILES MUST HAVE THE CUBE SAVED UNDER THE VARIABLE datacube)
 ; cadence = DELTA TIME BETWEEN SUCESSIVE FRAMES - GIVEN IN SECONDS
