@@ -56,9 +56,9 @@
 ;   Ramon Oliver, 2004, routines written in nice idl format
 ;   Jaume Terradas 22-6-2009, minor changes
 ;   Nabil Freij, 11/11/11, Changed the plotting routines
-;   Peter Keys, 11/14, Making it nicer/easier to understand and changing the plots
-;   Peter Keys, 11/14, Changed to function to output the plots as various arrays
-;   Peter Keys, 11/14, Chnaged the cap on number of IMFs (was 12 originally now 20)
+;   Peter Keys, Making it nicer/easier to understand and changing the plots
+;   Peter Keys, Changed to function to output the plots as various arrays
+;   Peter Keys, Chnaged the cap on number of IMFs (was 12 originally now 20)
 
 
 FUNCTION EMD_FUNCTION,signal,sda,imf,DT=dt,PSFILE=psfile
