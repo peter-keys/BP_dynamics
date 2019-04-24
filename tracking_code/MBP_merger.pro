@@ -6,8 +6,9 @@
 ; USEAGE:     	NEXT_FRAME
 ; INPUT:	FOLLWOING FRAME WHERE TWO MBPS HAVE MERGED
 ; OUTPUT:	CLOSEST MERGER TO FOLLOW
-; AUTHOR:     	Version 2.1 - Philip. J. Crockett, QUB, 03 JUNE 2009
-;   	    	    	         (Email: pcrockett02@qub.ac.uk)
+; AUTHOR:     	Version 2.1 
+;
+
 ;AMENDMENT HISTORY
 ;(v2.1) - included merging numbers in the output table
 ;(v2.1) - if only one merged number then this means that MBP
