@@ -12,7 +12,7 @@
 ;OUTPUT:	Array of values for estimates for the MBP (for 6301, 6302, and the actual Nicole value
 ;		for comparison...)
 ;		
-;AUTHOR:	Peter H. Keys, August 2011
+;AUTHOR:	Peter H. Keys
 ;
 ;-
 
