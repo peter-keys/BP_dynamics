@@ -14,12 +14,12 @@
 ;		Y - THIS IS THE CENTER OF GRAVITY Y_COORD OF THE PREVIOUS MBP
 ; OUTPUT:	CONFIRM - ARRAY TO STORE THE CONFIRMED ASSOCATIED MBP
 ; CALLING:	CALLED IN MBP_tracking & MBP_tabulating
-; AUTHOR:     	Version 3.0 - Philip. J. Crockett, QUB, 10 Dec 2010
-;   	    	    	         (Email: pcrockett02@qub.ac.uk)
+; AUTHOR:     	Version 3.0 
+;
 ; AMENDMENT HISTORY
-; 09 DEC 2010 - (v2) - Annotated detail was added
-; 10 DEC 2010 - (v3) - Full rewrite of the code.  Thought of a new method to detect the
-;		       closest associted object and wrote version 3
+; (v2) - Annotated detail was added
+; (v3) - Full rewrite of the code.  Thought of a new method to detect the
+;	       closest associted object and wrote version 3
 
 FUNCTION MBP_search, nextim, lox, hix, loy, hiy, x, y
 ;----------------------------------------------------------------------------------------------------------------------------
