@@ -21,7 +21,7 @@
 ;		going to try and have it as a sliding apodisation window (sliding as half the 
 ;		width of the window) to get a more accurate display of transverse flows....	
 ;
-;AUTHOR:	Peter H. Keys, November 2017
+;AUTHOR:	Peter H. Keys
 ;
 ;-
 
