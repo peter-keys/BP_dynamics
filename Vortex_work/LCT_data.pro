@@ -15,7 +15,7 @@
 ;		The Max, Min and Average velocities in each frame
 ;		The inclination angle to be used in the future for plotting arrows to show flows
 ;
-;AUTHOR:	Peter H. Keys, January 2012
+;AUTHOR:	Peter H. Keys
 ;
 ;-
 
