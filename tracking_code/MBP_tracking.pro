@@ -1,5 +1,3 @@
-;@/home/pjc/idl/revised_vers/version_two/two_five/dotr.bat 
-;tracking=MBP_tracking(data='/data/rosa3/oldrosa1/phk/data/28May2009/gband/gband_quiet_2sec.sav',array=detect,file='test.dat',imst=0,imend=20,cad=2.)
 ;+
 ;
 ; ROUTINE:  MBP_tracking
@@ -7,6 +5,9 @@
 ; PURPOSE:  TO TRACK MBPS THROUGHOUT THEIR LIFETIME, STABILISING ANY WHICH ARE MISSING
 ;	    FROM THE DETECTION FRAMES
 ; USEAGE:   DATA, ARR, TABLE, IMST, IMEND, CAD
+;
+;	tracking = MBP_tracking(data='dataset.sav',array=detect,file='tracking_file.dat',imst=0,imend=1000,cad=2.)
+;
 ; INPUT:    DATA - DIRECTORY OF ORIGINAL DATA.  IF DATA IN .SAV FORMAT INCLUDE THE NAME
 ;	    OF THE DATA CUBE IN THE CALLING PROCESS
 ;	    ARR - THE DETECTION ARRAY FROM THE SEARCH ALGORITHM
@@ -21,19 +22,17 @@
 ;	    NB: In .SAV format the code shall operate across the entire datacube. 
 ;	    NB: If keyword OUTPUT set, the resulting images shall be written to the designated
 ;		file in .FIT
-;AUTHOR:    Version 2.3 - Philip. J. Crockett, QUB, 30 NOV 2010
-;   	    	    	      (Email: pcrockett02@qub.ac.uk)
-;		Adapted by P. H. Keys, QUB, 2011 - present...
-
+;AUTHOR:    Version 2.3 
+;
 ;AMENDMENT HISTORY
-;21/01/2011 - (v2.1)-Higher initial intensity threshold employed to set a seed region.  Now potential seed regions must
+; (v2.1)-Higher initial intensity threshold employed to set a seed region.  Now potential seed regions must
 ;		     overlap original object by 1/2 the number of pixels prior to being separated.  This stops the inclusion
 ;		     of single pixel seeds.
-;21/01/2011 - (v2.1)-Adjustable growing threshold to ensure every chance is given to grow a missed MBP.
-;21/01/2011 - (v2.1)-Grown array is now set to zero during varying stage to prevent erronous inclusion of small MBPs
-;24/01/2011 - (v2.2)-Addition of MBP_seed program to store multiple seed regions if object is observed to separate
-;17/02/2011 - (v2.3)-The mergin of two objects found with an associated object is now recognised
-;17/02/2011 - (v2.3)-THe merging of objects is now noted with the addition of a 7th column to table using MBP_merger v2.1
+; (v2.1)-Adjustable growing threshold to ensure every chance is given to grow a missed MBP.
+; (v2.1)-Grown array is now set to zero during varying stage to prevent erronous inclusion of small MBPs
+; (v2.2)-Addition of MBP_seed program to store multiple seed regions if object is observed to separate
+; (v2.3)-The mergin of two objects found with an associated object is now recognised
+; (v2.3)-THe merging of objects is now noted with the addition of a 7th column to table using MBP_merger v2.1
 
 
 FUNCTION MBP_tracking, data=data, array=array, file=file,imst=imst,imend=imend,cad=cad
@@ -114,7 +113,7 @@ label = -1
 ;After this the code enters a WHILE loop until all objects have been investigated.  Each object is 
 ;grown (lines[137:138]) prior to the calculation of the center of gravity and the placement of the 
 ;information into INFO (lines[149:154]). After the intial image, this section writes all the information 
-;from the previous two frames to file, throught the parameter''+FILE+''(lines[117:13Û]). The function 
+;from the previous two frames to file, throught the parameter''+FILE+''(lines[117:13Ã›]). The function 
 ;MBP_tabulating.pro, takes the information from ''+FILE+'' and searches for associated MBPs in the 
 ;following image.  Any new MBPs that appear in the image shall be inputted to OBJS (line[132]) and 
 ;searched for in the following sections.
