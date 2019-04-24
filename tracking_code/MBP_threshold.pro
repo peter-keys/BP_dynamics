@@ -16,8 +16,8 @@
 ; OUTPUT:  	THRES - A THRESHOLD INTENSITY GRADIENT EMPLOYED TO IDENTIFY
 ;			MBPS IN MBP_detect
 ; CALLING:	CALLED IN MBP_detect.pro
-; AUTHOR:  	Version 2.0 - Philip. J. Crockett, QUB, 25 Nov 2010
-;   	    	         (Email: pcrockett02@qub.ac.uk)
+; AUTHOR:  	Version 2.0 
+;
 
 FUNCTION MBP_threshold,norm_im,objs,edg,splt,im_size
 
