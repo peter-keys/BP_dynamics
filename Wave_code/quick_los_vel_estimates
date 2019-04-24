@@ -1,0 +1,41 @@
+;-----------------------------------------------------------------------------------------------
+;	WANT SOME ESTIMATES OF THE LOS VELOCITY IN THE PORES 
+;-----------------------------------------------------------------------------------------------
+
+; Want to take estimates and make arrays with the LOS component at the core and any line bisectors
+
+sample_im = READFITS('IBIS_Ca_scan_00110.fits')
+
+.r picks
+tvim,sample_im[*,*,0]
+pick & pick
+
+
+vel1 = READFITS('IBIS_Ca_Doppler_velocity_maps.fits')	;Core
+vel2 = READFITS('IBIS_Ca_bisector_100mA_velocity_maps.fits')	;Bi sector
+vel3 = READFITS('IBIS_Ca_bisector_200mA_velocity_maps.fits')	;bisector
+LOS_vel = DBLARR(3,N_ELEMENTS(vel1[0,0,*]))
+
+avs1 = DBLARR(N_ELEMENTS(vel1[0,0,*]))
+avs2 = DBLARR(N_ELEMENTS(vel2[0,0,*]))
+avs3 = DBLARR(N_ELEMENTS(vel3[0,0,*]))
+
+FOR i = 0, N_ELEMENTS(vel1[0,0,*])-1 DO avs1[i] = MEAN(vel1[453:459,478:480,i])
+FOR i = 0, N_ELEMENTS(vel2[0,0,*])-1 DO avs2[i] = MEAN(vel2[453:459,478:480,i])
+FOR i = 0, N_ELEMENTS(vel3[0,0,*])-1 DO avs3[i] = MEAN(vel3[453:459,478:480,i])
+
+LOS_vel[0,*] = avs1
+LOS_vel[1,*] = avs2
+LOS_vel[2,*] = avs3
+
+;Output to the regular date names:
+
+Jul2011_vel = LOS_vel	;NOT PROCESSED
+Dec092011_vel = LOS_vel	;NOT PROCESSED
+Dec102011_vel = LOS_vel
+Sept2012_vel = LOS_vel	;NOT PROCESSED
+Mar2013_vel = LOS_vel
+Aug2013_vel = LOS_vel	;NOT PROCESSED
+Apr2014_vel = LOS_vel	;NOT PROCESSED
+
+SAVE,FILENAME='/data/rosa3/oldrosa1/phk/data/wavelet_datasets/LOS_vels_Mar2013.sav',Mar2013_vel
