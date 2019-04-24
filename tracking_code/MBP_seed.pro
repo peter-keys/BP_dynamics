@@ -12,15 +12,14 @@
 ;		si - SIZE OF IMAGE
 ; OUTPUT:	POSS - RETURNS THE POSSIBLE SEED REGION
 ; CALLING	CALLED FROM MBP_tracking.pro & MBP_tabulating [line 132]
-; AUTHOR:     	Version 1.0 - Philip. J. Crockett, QUB, 21 JAN 2011
-;   	    	    	         (Email: pcrockett02@qub.ac.uk)
+; AUTHOR:     	Version 1.0 
 ;
 ;AMENDMENT HISTORY
-;21/01/2011 - (v2.1)-Higher initial intensity threshold employed to set a seed region.  Now potential seed regions must
+; (v2.1)-	Higher initial intensity threshold employed to set a seed region.  Now potential seed regions must
 ;		     overlap original object by 1/2 the number of pixels prior to being separated.  This stops the inclusion
 ;		     of single pixel seeds.
-;21/01/2011 - (v2.1)-Adjustable growing threshold to ensure every chance is given to grow a missed MBP.
-;21/01/2011 - (v2.1)-Grown array is now set to zero during varying stage to prevent erronous inclusion of small MBPs
+; (v2.1)-	Adjustable growing threshold to ensure every chance is given to grow a missed MBP.
+; (v2.1)-	Grown array is now set to zero during varying stage to prevent erronous inclusion of small MBPs
 
 FUNCTION MBP_seed, ob, grp, x, y, si
 
