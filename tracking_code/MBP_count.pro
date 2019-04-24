@@ -7,8 +7,8 @@
 ; INPUT: 	ARRAY - THE IMAGE UNDER INVESTIGATION
 ; OUTPUT: 	CNT - THE NUMBER OF OBJECTS COUNTED
 ; CALLING:	CALLED IN MBP_tracking.pro & MBP_tabulation.pro
-; AUTHOR: 	Version 2..0 - Philip J. Crockett, QUB, 09 DEC 2009
-;			 (EMAIL: pcrockett02@qub.ac.uk)
+; AUTHOR: 	Version 2..0 
+;
 
 FUNCTION MBP_count, array
 
