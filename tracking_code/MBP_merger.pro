@@ -9,12 +9,13 @@
 ; AUTHOR:     	Version 2.1 - Philip. J. Crockett, QUB, 03 JUNE 2009
 ;   	    	    	         (Email: pcrockett02@qub.ac.uk)
 ;AMENDMENT HISTORY
-;18/02/2011 - (v2.1) - included merging numbers in the output table
-;23/02/2011 - (v2.1) - if only one merged number then this means that MBP
-;		       has been grown to touch a previously found MBP, thus
-;		       code shall overwrite previous MBP with new information 
-;		       on size and (x, y) position	
+;(v2.1) - included merging numbers in the output table
+;(v2.1) - if only one merged number then this means that MBP
+;	  has been grown to touch a previously found MBP, thus
+;	  code shall overwrite previous MBP with new information 
+;	  on size and (x, y) position	
 ;+
+
 PRO MBP_merger, file, mergd,separ,prev, xprev,yprev, x, y, imno
 
 imsize= SIZE(mergd)
