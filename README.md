@@ -1,8 +1,11 @@
 # BP_dynamics
 Some codes for looking at MBP dynamics (specifically waves)
 
-I have put up some codes here for looking at MBP dynamics in data and si mulations. 
+I have put up some codes here for looking at MBP dynamics in data and simulations. 
+
 These are specifically useful for looking at wave motions in MBPs.
+
+Please note, these codes may not all be easy to follow/understand. I am working on making a version of these codes that is more user-friendly and is much easier to use for the general user. The ultimate idea is to have some applet that you can supply your data to, which then will allow you to determine candidates for various waver modes in MBPs (note this may take a while, though the basis of such a code is here alreasy, it just needs to be tied together and tested). 
 
 The codes are separtated into different sub-repositories depending on their use. 
 The Sub-repositories are:
