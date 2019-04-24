@@ -7,8 +7,8 @@
 ; INPUT:   	BTPT_GROUP - GROUP TO BE SPLIT
 ;		  	
 ; OUTPUT:  	SPLIT_BTPTS
-; AUTHOR:  	Version 1.0 - Philip. J. Crockett, QUB, 12 May 2008
-;   	    	         (Email: pcrockett02@qub.ac.uk)
+; AUTHOR:  	Version 1.0 
+;
 
 FUNCTION MBP_split,group,im_size,btpt_sigma
 sto = group
